@@ -8,3 +8,5 @@ If you want to do this from Windows 10 or 11 client machine then you need to  do
 Note: Windows Client Machine should be connected to the domain.
 
 You can put the list of employees file into notepad then save it to C: disk. 
+
+Make sure that user is under your domain name ,not in a folder to find the user
