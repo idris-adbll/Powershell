@@ -1,0 +1,4 @@
+#load in the CSV file for employees
+
+We are going to use this: 
+    -Import-Csv -Path "C:\Employees.csv" -Delimiter "," 
