@@ -2,3 +2,6 @@
 
 We are going to use this: 
     -Import-Csv -Path "C:\Employees.csv" -Delimiter "," 
+Most people stop here so instead we continue our command line. To write name and Last name properly and we can change for example, "office" to "physicalDeliveryOfficeName" or 
+"FirstName" to " GivenName 
+instead of changing later we cahnge now amd it will help us later
