@@ -12,7 +12,7 @@ You can put the list of employees file into notepad then save it to C: disk.
 
 Make sure that user is under your domain name ,not in a folder to find the user
 
-You can also activate Advanced Features to see more options about user view > Advanced Features
+You can also activate Advanced Features to see more options about user View > Advanced Features
 
 ![Screenshot 2025-05-24 183122](https://github.com/user-attachments/assets/65b17eeb-6874-42e9-ae87-f3194989e549)
 ![Screenshot 2025-05-24 183911](https://github.com/user-attachments/assets/0054fca1-50ad-420f-92f6-6b6076e36c62)
