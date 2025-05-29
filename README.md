@@ -37,7 +37,7 @@ for example; @{Name="EmployeeID";Expression={$_.EmployeeID}}.GetType()  this cod
 Creating Hashtables
  A hashtable is a data structure that stores key-value pairs. Creating a hashtable allows you to quickly look up values based on a key.
 Why use hashtables?
-Fast lookups by key.
-Useful for storing and managing related data.
-Flexible to add or remove keys and values at runtime.
-Why use hashtables?
+  -Fast lookups by key.
+  -Useful for storing and managing related data.
+  -Flexible to add or remove keys and values at runtime.
+ 
