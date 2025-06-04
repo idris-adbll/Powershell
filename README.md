@@ -35,9 +35,28 @@ for example; @{Name="EmployeeID";Expression={$_.EmployeeID}}.GetType()  this cod
 {$_.EmployeeID}.GetType()  this code will give scriptblock
 
 Creating Hashtables
+
  A hashtable is a data structure that stores key-value pairs. Creating a hashtable allows you to quickly look up values based on a key.
+ 
 Why use hashtables?
+
   -Fast lookups by key.
   -Useful for storing and managing related data.
   -Flexible to add or remove keys and values at runtime.
- 
+
+
+ Enumerating hashtables
+
+ $SyncProperties+$SyncFieldMap.GetEnumerator()
+
+ ![Screenshot 2025-06-03 050156](https://github.com/user-attachments/assets/3c76e54b-a1ff-4820-96a3-6a4a1e1ebaab)
+
+ Sync Properties
+
+
+ $Properties=ForEach($Property in $SyncProperties){
+      @{Name=$Property.Value}
+}      
+
+![Screenshot 2025-06-04 053954](https://github.com/user-attachments/assets/a0545c70-b6c6-4bfb-ba40-91cd0928a1cb)
+
