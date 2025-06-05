@@ -56,7 +56,9 @@ Why use hashtables?
 
  $Properties=ForEach($Property in $SyncProperties){
       @{Name=$Property.Value}
+
 }      
 
+Highlight GetEnumerator line to the buttom curly bracket run it then highlight $Properties only then run again you will have this 
 ![Screenshot 2025-06-04 053954](https://github.com/user-attachments/assets/a0545c70-b6c6-4bfb-ba40-91cd0928a1cb)
 
