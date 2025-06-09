@@ -22,7 +22,7 @@ You can also activate Advanced Features to see more options about user View > Ad
 
 We are going to use this: 
    
-    -Import-Csv -Path "C:\Employees.csv" -Delimiter "," 
+        -Import-Csv -Path "C:\Employees.csv" -Delimiter "," 
 
 Most people stop here so instead we continue our command line. To write name and Last name properly and we can change for example, "office" to "physicalDeliveryOfficeName" or "FirstName" to " GivenName 
 
@@ -32,7 +32,9 @@ Simpflifying the Data
 
 for example; @{Name="EmployeeID";Expression={$_.EmployeeID}}.GetType()  this code will give hashtable
 
-{$_.EmployeeID}.GetType()  this code will give scriptblock
+      {$_.EmployeeID}.GetType()  
+
+This code will give scriptblock
 
 Creating Hashtables
 
@@ -47,19 +49,21 @@ Why use hashtables?
 
  Enumerating hashtables
 
- $SyncProperties+$SyncFieldMap.GetEnumerator()
+       $SyncProperties+$SyncFieldMap.GetEnumerator()
 
  ![Screenshot 2025-06-03 050156](https://github.com/user-attachments/assets/3c76e54b-a1ff-4820-96a3-6a4a1e1ebaab)
 
  Sync Properties
 
 
- $Properties=ForEach($Property in $SyncProperties){
-      @{Name=$Property.Value}
-
-}      
+        $Properties=ForEach($Property in $SyncProperties){
+             @{Name=$Property.Value}
+        }      
 
 Highlight GetEnumerator line to the buttom curly bracket run it then highlight $Properties only then run again you will have this 
 
 ![Screenshot 2025-06-04 053954](https://github.com/user-attachments/assets/a0545c70-b6c6-4bfb-ba40-91cd0928a1cb)
 
+
+This is actually going to store array, our array as we know is going to be a bunch of a different hash tablesand scriptblocks. Now we highlight and run from GetEnumurator then we highlight and run $Properties line we should have this 
+![image](https://github.com/user-attachments/assets/d988d99f-d455-4b0a-8b04-24c222b7eac9)
