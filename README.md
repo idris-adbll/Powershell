@@ -65,5 +65,11 @@ Highlight GetEnumerator line to the buttom curly bracket run it then highlight $
 ![Screenshot 2025-06-04 053954](https://github.com/user-attachments/assets/a0545c70-b6c6-4bfb-ba40-91cd0928a1cb)
 
 
-This is actually going to store array, our array as we know is going to be a bunch of a different hash tablesand scriptblocks. Now we highlight and run from GetEnumurator then we highlight and run $Properties line we should have this 
+This is actually going to store array, our array as we know is going to be a bunch of a different hash tables and scriptblocks. Now we highlight and run from GetEnumurator then we highlight and run $Properties line we should have this 
 ![image](https://github.com/user-attachments/assets/d988d99f-d455-4b0a-8b04-24c222b7eac9)
+
+
+we run this line and we should I have this finally
+      Import-Csv -Path "C:\Employees.csv" -Delimeter "," | Select-Object -Property $Properties
+
+![Screenshot 2025-06-09 051512](https://github.com/user-attachments/assets/7b87615e-c24e-461f-b4e8-e4f72154fd76)
