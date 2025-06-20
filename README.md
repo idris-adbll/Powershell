@@ -66,10 +66,30 @@ Highlight GetEnumerator line to the buttom curly bracket run it then highlight $
 
 
 This is actually going to store array, our array as we know is going to be a bunch of a different hash tables and scriptblocks. Now we highlight and run from GetEnumurator then we highlight and run $Properties line we should have this 
+
 ![image](https://github.com/user-attachments/assets/d988d99f-d455-4b0a-8b04-24c222b7eac9)
 
 
-we run this line and we should I have this finally
-      Import-Csv -Path "C:\Employees.csv" -Delimeter "," | Select-Object -Property $Properties
+we run this line and we should have this finally
+
+      Import-Csv -Path "C:\Employees.csv" -Delimiter "," | Select-Object -Property $Properties
 
 ![Screenshot 2025-06-09 051512](https://github.com/user-attachments/assets/7b87615e-c24e-461f-b4e8-e4f72154fd76)
+
+
+Next, we create function and we also put an error handling if user run into an error they can see a message 
+
+   function Get-EmployeeFromCsv{
+       [CmdletBinding()]
+       Param(
+            [Parameter(Mandatory)]
+            [string]$FilePath,
+            [Parameter(Mandatory)]
+            [string]$Delimiter,
+            [Parameter(Mandatory)]
+            [hashtable]$SyncFieldMap
+        )
+
+      try{
+
+           
